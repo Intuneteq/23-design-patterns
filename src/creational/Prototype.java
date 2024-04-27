@@ -20,7 +20,7 @@ class Vehicle implements IPrototype {
 
     @Override
     public Vehicle _clone() {
-        return null;
+        return new Vehicle(this);
     }
 }
 
@@ -31,7 +31,7 @@ class Truck extends Vehicle {
     }
 
     Truck(Truck truck) {
-        super((Vehicle) truck);
+        super(truck);
         this.topSpeed = truck.topSpeed;
     }
 

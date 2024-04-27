@@ -66,4 +66,5 @@ class ValidPasswordHandler extends Handler {
 }
 
 class ChainOfResponsibility {
+
 }
